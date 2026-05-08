@@ -1,0 +1,50 @@
+# N-INFO-CELL Windows Requirements
+# ===================================
+
+## Required Software
+
+### 1. Node.js (v16 or higher)
+Download: https://nodejs.org/
+Install: Express install (Next, Next, Finish)
+Verify: Open PowerShell and run: node --version
+
+### 2. PostgreSQL (v12 or higher)
+Download: https://www.postgresql.org/download/windows/
+Install: Express install
+Default Port: 5432
+Default User: postgres
+Password: (set during installation)
+Verify: Open PowerShell and run: psql --version
+
+### 3. Git (Optional but recommended)
+Download: https://git-scm.com/download/win
+Install: Express install
+
+## System Requirements
+
+- OS: Windows 10 or higher (64-bit)
+- RAM: 4GB minimum (8GB recommended)
+- Disk Space: 2GB available
+- Internet: Required for initial setup
+
+## After Installation
+
+1. Restart your computer
+2. Run N-INFO-CELL installer
+3. System will auto-configure everything
+4. Click desktop shortcut to start
+
+## Troubleshooting
+
+### "Node.js is not recognized"
+- Restart PowerShell/Command Prompt after installing Node.js
+- Or restart your computer
+
+### "PostgreSQL connection refused"
+- Verify PostgreSQL is running (Services app)
+- Check username and password in .env file
+- Default password might be blank
+
+### "Port 3000 already in use"
+- Change PORT in backend/.env to 3001
+- Or kill process: taskkill /F /IM node.exe
